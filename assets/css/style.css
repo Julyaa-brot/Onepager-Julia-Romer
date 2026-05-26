@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primarycolor: #f9f4f3;
+  --secondarycolor: #351f1b;
+  --tertiarycolor: #d4376d;
+  --quaternarycolor: #f86830;
+  --blue: #3d65ba;
+
+  --font-title: "Passion One", sans-serif;
+  --font-highlight: "Margarine", sans-serif;
+  --font-body: "Meera Inimai", sans-serif;
+}
+
+
+/* BODY */
+body {
+  background: var(--primarycolor);
+  color: var(--secondarycolor);
+  font-family: var(--font-body);
+  margin: 0;
+
+}
+
+/* NAV */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--font-title);
+  background: var(--tertiarycolor);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: var(--quaternarycolor);
+}
+
+/* HERO */
+#hero {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 20px;
+}
+
+
+h1 {
+  font-size: 14rem;
+  color: var(--blue);
+  animation: fadeIn 1.5s ease;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: var(--font-highlight);
+  color: var(--tertiarycolor);
+  font-size: 2rem;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
