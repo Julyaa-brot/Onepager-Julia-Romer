@@ -26,13 +26,15 @@ body {
 
 }
 
+
+
 /* NAV */
 nav ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
   list-style: none;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 nav a {
@@ -43,22 +45,70 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   transition: 0.3s;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
   background: var(--quaternarycolor);
 }
 
+
 /* HERO */
+
 #hero {
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
+  align-items: center;
   text-align: center;
-  padding: 20px;
 }
+
+
+/* subtitle */
+#hero h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+
+/* icon */
+.scroll i {
+  font-size: 4.5rem;
+  animation: rocketDown 1.5s infinite;
+    color: var(--tertiarycolor);
+}
+
+/* animation */
+@keyframes rocketDown {
+  0% {
+    transform: translateY(0) rotate(180deg);
+  }
+  50% {
+    transform: translateY(1rem) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(180deg);
+  }
+}
+
+
+
+/* scroll hint */
+.scroll {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.7;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(0.5rem); }
+  100% { transform: translateY(0); }
+}
+
+
 
 
 h1 {
@@ -80,4 +130,65 @@ section {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+
+#geschmack article {
+  min-height: 300px; /* wichtig! */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+/* Schoggi */
+.schoggi {
+  background: var(--secondarycolor);
+  color: white;
+}
+
+/* Ananas */
+.ananas {
+  background: var(--primarycolor);
+  color: var(--secondarycolor);
+}
+
+/* Orange */
+.orange {
+  background: var(--quaternarycolor);
+  color: white;
+}
+
+/* Text Styling inside Geschmack */
+#geschmack h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+#geschmack p {
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#geschmack article {
+  transition: 0.3s;
+}
+
+#geschmack h2,
+#geschmack p {
+  transition: 0.3s;
+}
+
+#geschmack article:hover h2 {
+  transform: translateY(-10px);
+}
+
+#geschmack article:hover p {
+  transform: translateY(-5px);
+}
+
+
+
 
