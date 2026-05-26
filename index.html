@@ -6,18 +6,19 @@
     <title>Document</title>
      <link rel="stylesheet" href="assets/css/style.css">
 
-<!--einsetzen (google fonts/iconoir)-->
+<!--einsetzen (google fonts/iconoir/style.css)-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
-    <link rel="stylesheet" href="assets/CSS/icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Margarine&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Margarine&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+<link rel="stylesheet" href="assets/CSS/icons.css">
 
 </head>
 <body>
@@ -47,27 +48,30 @@
     <section class="hero">
         <h1>Raketeglace</h1>
         <h3>dSchwizer Kindheits Glace</h3>
-        <p>Klick uf dRakete um meh zerfahre!</p>
-        <img src="" alt="">
     </section>
 
 
-<!--Geschmack-->
-    <section>
-        <div>
-            <h2>Schoggi</h2>
-            <p>A de Spitze het d'Glace e dünni Schoggihülle. Welli schö knackig, süess isch und dedurch bim inebiesse de perfäkti Start bietet.</p>
-        </div>
-        <div>
-            <h2>Ananas</h2>
-            <p>I de Mitti chunt en süessliche Ananasgschmack. Schö summerlich und erfrischend.</p>
-        </div>
-        <div>
-            <h2>Orange</h2>
-            <p>Am Schluss wartet frische, leicht säuerliche Orange, der klassische Abschluss einer Raketen‑Glace.</p>
-        </div>
-    </section>
+<!-- Geschmack -->
+<section class="rakete">
+  <figure class="rakete-bild">
+    <img src="rakete.png" alt="Raketen-Glace">
+  </figure>
 
+  <div class="geschmack schoggi">
+    <h2>Schoggi</h2>
+    <p>A de Spitze het d'Glace e dünni Schoggihülle. Welli schö knackig, süess isch und dedurch bim inebiesse de perfäkti Start bietet.</p>
+  </div>
+
+  <div class="geschmack ananas">
+    <h2>Ananas</h2>
+    <p>I de Mitti chunt en süessliche Ananasgschmack. Schö summerlich und erfrischend.</p>
+  </div>
+
+  <div class="geschmack orange">
+    <h2>Orange</h2>
+    <p>Am Schluss wartet frische, leicht säuerliche Orange, der klassische Abschluss einer Raketen‑Glace.</p>
+  </div>
+</section>
 
 
 <!--Geschichte-->
@@ -88,22 +92,22 @@
 <!--Fun Facts-->
 <section>
     <h2>Fun Facts</h2>
-    <div>
+    <div class="fact-box">
         <h3>Seit 1969</h3>
         <p>Scho über 50 Johr begleitet d'Raketeglace Generatione.</p>
     </div>
 
-    <div>
+    <div class="fact-box">
         <h3>Schwizer Produktion</h3>
         <p>Sit em afang wird d'Glace bi üs i de Schwiz produziert.</p>
     </div>
 
-    <div>
+    <div class="fact-box">
         <h3>Kaloriearm?</h3>
         <p>Jo tatsächlich chammer sich au e Glace i de Diät gönne mit nu 110 Kalorie pro Stück!</p>
     </div>
 
-    <div>
+    <div class="fact-box">
         <h3>Inspiration</h3>
         <p>Dank dem historische Ereigniss vu de Apollo-11-Mission isch üsi Glace entstande.</p>
     </div>
@@ -131,5 +135,170 @@
 </footer>
 
     
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raketeglace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#hero">
+      Rakete
+      <span>swiss retro</span>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#geschmack">Geschmack</a></li>
+        <li><a href="#geschichte">Geschichte</a></li>
+        <li><a href="#funfacts">Fun Facts</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Raketeglace</h1>
+
+        <p class="hero-small-text">
+          Die Glace isch tuff und so klick uf dglace um meh zefahre!
+        </p>
+
+        <p class="hero-claim">
+          dSchwiizer<br>
+          Kindheits Glace
+        </p>
+
+        <img class="hero-ice" src="bilder/raketeglace.png" alt="Raketeglace">
+      </div>
+    </section>
+
+    <section id="geschmack" class="taste-section">
+      <img class="big-ice" src="bilder/raketeglace-gross.png" alt="Grosse Raketeglace">
+
+      <article class="taste taste-chocolate">
+        <div class="taste-text">
+          <h2>Schoggi</h2>
+          <p>Die Rakete wurde 1969 lanciert - im selben Jahr wie die erste Mondlandung. Inspiriert vo</p>
+        </div>
+      </article>
+
+      <article class="taste taste-pineapple">
+        <div class="taste-text">
+          <h2>Ananas</h2>
+          <p>Die Rakete wurde 1969 lanciert - im selben Jahr wie die erste Mondlandung. Inspirie</p>
+        </div>
+      </article>
+
+      <article class="taste taste-orange">
+        <div class="taste-text">
+          <h2>Orange</h2>
+          <p>Die Rakete wurde 1969 lanciert - im selben Jahr wie die erste Mondlandung. Inspirie</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="geschichte" class="history-section">
+      <div class="history-grid">
+        <div class="history-text">
+          <h2>Gschicht</h2>
+
+          <p>
+            Die Rakete wurde 1969 lanciert - im selben Jahr wie die erste Mondlandung.
+            Inspiriert von der Raumfahrt und dem Zukunftsgefühl der damaligen Zeit
+            entwickelte Frisco eines der bekanntesten Glaces der Schweiz.
+          </p>
+
+          <p>
+            Bis heute gehört die Rakete zu den meistverkauften Wasserglaces der Schweiz
+            und weckt bei vielen Menschen Erinnerungen an Sommer, Freibäder und Kindheit.
+          </p>
+        </div>
+
+        <div class="history-image">
+          <img src="bilder/rakete-alt.jpg" alt="Historisches Bild der Raketeglace">
+        </div>
+      </div>
+    </section>
+
+    <section id="funfacts" class="facts-section">
+      <h2>Fun Facts</h2>
+
+      <div class="facts-band">
+        <div class="facts-grid">
+          <article class="fact-card">
+            <img src="bilder/icon-rakete.svg" alt="Raketen Icon">
+            <h3>Seit 1969</h3>
+            <p>Über 50 Jahre begleitet die Rakete Generationen.</p>
+          </article>
+
+          <article class="fact-card">
+            <img src="bilder/icon-planet.svg" alt="Planet Icon">
+            <h3>Space-inspiriert</h3>
+            <p>Das Design wurde vom Weltraum-Zeitalter beeinflusst.</p>
+          </article>
+
+          <article class="fact-card">
+            <img src="bilder/icon-schweiz.svg" alt="Schweizer Flagge Icon">
+            <h3>Schweizer Klassiker</h3>
+            <p>Eine der bekanntesten Glaces der Schweiz.</p>
+          </article>
+
+          <article class="fact-card">
+            <img src="bilder/icon-glace.svg" alt="Glace Icon">
+            <h3>Erfrischend</h3>
+            <p>Fruchtig, cremig und schokoladig - die perfekte Kombination.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="gallery-section">
+      <h2>Gallerie</h2>
+
+      <div class="gallery-grid">
+        <img src="bilder/galerie-1.jpg" alt="Kind isst Raketeglace">
+        <img src="bilder/galerie-2.jpg" alt="Zwei Personen mit Raketeglace">
+        <img src="bilder/galerie-3.jpg" alt="Raketeglace auf pinkem Hintergrund">
+        <img src="bilder/galerie-4.jpg" alt="Viele Raketeglaces in Produktion">
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact-section">
+      <div class="contact-grid">
+        <strong>E-mail:</strong>
+        <span>frisko.schogg@pu9dwijklnbdhvgd</span>
+
+        <strong>telefonnummer:</strong>
+        <span>cuewijolsjcnnbhw</span>
+
+        <strong>adresse:</strong>
+        <span>suhcuucuehjbuhcjciansjlanj</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#geschmack">Geschmack</a></li>
+        <li><a href="#geschichte">Geschichte</a></li>
+        <li><a href="#funfacts">Fun Facts</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
